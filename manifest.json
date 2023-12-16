@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+    "name": "Redirectit",
+    "version": "0.1",
+
+    "description": "Circumvents Reddit's VPN and empty user-agent blocks by redirecting the user to the equivalent page on old.reddit.com if the \"Blocked\" page is detected.",
+
+    "icons": {
+        "48": "icons/redirectit-48.png",
+        "96": "icons/redirectit-96.png"
+    },
+
+    "content_scripts": [
+      {
+        "matches": ["*://www.reddit.com/*"],
+        "js": ["redirectit.js"]
+      }
+    ]
+
+
+}
