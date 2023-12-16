@@ -1,14 +1,15 @@
-#Redirectit
+# Redirectit
 Let's see how long before Spez blocks this.
 
-##What Is This?
+## What Is This?
 A Firefox browser extension designed to circumvent Reddit's VPN and empty user-agent blocks by redirecting the user to the equivalent page on old.reddit.com.
 
-##Why Do This?
+## Why Do This?
 I'm tired of big tech, tech bros, and their profit-before-everything control freak nature. I'm tired of the idea that we have to accept intrusions into our privacy, data hoarding, and every stupid whimsical policy they come up with. I'm tired of the idea that we have to follow their rules on their sites - and at the same time, society is construed so it's impossible not to use their terrible products. So, I'm going to do everything I can to get around these stupid, profit-driven, privacy-invading arbitrary "rules" for as long as is feasible.
 
 To put it simply, I aim to misbehave.
-##Cool. How Do I Install This?
+
+## Cool. How Do I Install This?
 I'm assuming you:
 * Use Firefox
 * Know how to use a terminal or CLI
