@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "Redirectit",
-    "version": "0.1",
+    "version": "0.2",
 
     "description": "Circumvents Reddit's VPN and empty user-agent blocks by redirecting the user to the equivalent page on old.reddit.com if the \"Blocked\" page is detected.",
 
