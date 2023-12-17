@@ -1,15 +1,17 @@
-const redirectit = () => {
-    if (isBlocked()){
-        const badSubDomain = /www/i;
-        const goodSubDomain = 'old';
-        window.location.href = window.location.href.replace(badSubDomain, goodSubDomain);
-    }
-}
+const getUrlData = new Promise((resolve) => {
+    resolve([document.querySelector('h1').innerText, document.querySelector('p').innerText.search('Your request has been blocked'), window.location.href])
+});
 
-const isBlocked = () => {
-    const test_h1 = document.querySelector('h1').innerText === 'whoa there, pardner!';
-    const test_first_p = document.querySelector('p').innerText.search('Your request has been blocked') !== -1;
-    return test_h1 && test_first_p ? true : false
+const redirectit = () => {
+    getUrlData.then((value) =>{
+        const [ele_h1, ele_first_p, loc] = value;
+        const is_blocked = ele_h1 === 'whoa there, pardner!' && ele_first_p !== -1 ? true : false;
+        if (is_blocked){
+            const badSubDomain = /www/i;
+            const goodSubDomain = 'old';
+            window.location.href = loc.replace(badSubDomain, goodSubDomain);
+        }
+    });
 }
 
 addEventListener('load', (event) => {redirectit()});
