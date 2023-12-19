@@ -15,3 +15,6 @@ const redirectit = () => {
 }
 
 addEventListener('load', (event) => {redirectit()});
+if (document.readyState === 'complete'){
+    redirectit();
+}
